@@ -8,3 +8,4 @@ libXtst
 mesa-libEGL
 mesa-libGL
 pciutils-devel
+xorg-x11-server-Xorg
