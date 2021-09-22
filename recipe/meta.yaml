@@ -13,9 +13,8 @@ source:
     - entry-points.patch
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  noarch: python
   entry_points:
     - {{ name }} = {{ name }}.gui.xrtQookStart:main
 
@@ -42,8 +41,10 @@ test:
     - xrt.gui.xrtGlow
     - xrt.gui.xrtQook
   commands:
-    - which xrt  # [not win]
-    - where xrt  # [win]
+    - which xrt            # [not win]
+    - ls -la $(which xrt)  # [not win]
+    - cat $(which xrt)     # [not win]
+    - where xrt            # [win]
 
 about:
   home: https://xrt.readthedocs.io
