@@ -17,6 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - {{ name }} = {{ name }}.gui.xrtQookStart:main
+  skip: true  # [py<36]
 
 requirements:
   host:
