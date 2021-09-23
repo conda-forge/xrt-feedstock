@@ -25,10 +25,10 @@ requirements:
     - pip
   run:
     - python
-    - distro
+    # - distro
     - matplotlib-base
     - numpy
-    - pocl
+    - pocl  # [not win]
     - pyopencl
     - pyqt
     - scipy
