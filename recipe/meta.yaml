@@ -27,6 +27,7 @@ requirements:
     - python
     - matplotlib-base
     - numpy
+    - pocl
     - pyopencl
     - pyqt
     - scipy
