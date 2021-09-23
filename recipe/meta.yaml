@@ -25,6 +25,7 @@ requirements:
     - pip
   run:
     - python
+    - distro
     - matplotlib-base
     - numpy
     - pocl
