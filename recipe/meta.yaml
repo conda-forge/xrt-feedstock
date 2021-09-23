@@ -42,10 +42,12 @@ test:
     - xrt.gui.xrtGlow
     - xrt.gui.xrtQook
   commands:
-    - which xrt            # [not win]
-    - ls -la $(which xrt)  # [not win]
-    - cat $(which xrt)     # [not win]
-    - where xrt            # [win]
+    - which xrtQookStart.py  # [not win]
+    - which xrt              # [not win]
+    - ls -la $(which xrt)    # [not win]
+    - cat $(which xrt)       # [not win]
+    - where xrtQookStart.py  # [win]
+    - where xrt              # [win]
 
 about:
   home: https://xrt.readthedocs.io
