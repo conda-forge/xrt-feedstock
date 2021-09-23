@@ -1,0 +1,25 @@
+From 78f2e790abc04d8bfa60d10805f4152990db494a Mon Sep 17 00:00:00 2001
+From: Maksim Rakitin <mrakitin@bnl.gov>
+Date: Thu, 23 Sep 2021 17:56:28 -0400
+Subject: [PATCH] fix-cl-platform-check-on-win
+
+---
+ xrt/backends/raycing/myopencl.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/xrt/backends/raycing/myopencl.py b/xrt/backends/raycing/myopencl.py
+index 87dd86c..3bfd63e 100644
+--- a/xrt/backends/raycing/myopencl.py
++++ b/xrt/backends/raycing/myopencl.py
+@@ -16,7 +16,7 @@ try:
+     cl.get_platforms()
+     os.environ['PYOPENCL_COMPILER_OUTPUT'] = '1'
+     isOpenCL = True
+-except ImportError:
++except Exception:
+     isOpenCL = False
+ 
+ try:
+-- 
+2.16.1
+

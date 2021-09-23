@@ -10,7 +10,8 @@ source:
   sha256: e00e89d794833e6686681a83bf77b5189a48cec9cbd992c01b71886e0e6d427a
   # TODO: remove the patch after https://github.com/kklmn/xrt/pull/42 is accepted/merged/released.
   patches:
-    - entry-points.patch
+    - 0000-entry-points.patch
+    - 0001-fix-cl-platform-check-on-win.patch
 
 build:
   number: 0
