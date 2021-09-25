@@ -1,6 +1,6 @@
-From 78f2e790abc04d8bfa60d10805f4152990db494a Mon Sep 17 00:00:00 2001
+From 1fd7a892170b3910bb1022b48b5c6e4d438e1a6d Mon Sep 17 00:00:00 2001
 From: Maksim Rakitin <mrakitin@bnl.gov>
-Date: Thu, 23 Sep 2021 17:56:28 -0400
+Date: Sat, 25 Sep 2021 09:45:19 -0400
 Subject: [PATCH] fix-cl-platform-check-on-win
 
 ---
@@ -8,7 +8,7 @@ Subject: [PATCH] fix-cl-platform-check-on-win
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/xrt/backends/raycing/myopencl.py b/xrt/backends/raycing/myopencl.py
-index 87dd86c..3bfd63e 100644
+index 4795d7e..74c0ca5 100644
 --- a/xrt/backends/raycing/myopencl.py
 +++ b/xrt/backends/raycing/myopencl.py
 @@ -16,7 +16,7 @@ try:
