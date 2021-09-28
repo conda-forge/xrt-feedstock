@@ -27,7 +27,7 @@ requirements:
   run:
     - python
     - distro
-    - freeglut
+    - freeglut  # [not osx]
     - matplotlib-base
     - numpy
     - pocl  # [not win]
