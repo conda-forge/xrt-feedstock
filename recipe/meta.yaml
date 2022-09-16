@@ -33,6 +33,7 @@ requirements:
     - pyopencl
     - pyopengl
     - pyqt
+    - pyqtwebengine
     - scipy
     - sphinx
 
