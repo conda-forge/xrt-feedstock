@@ -1,11 +1,11 @@
-About xrt
-=========
+About xrt-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xrt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://xrt.readthedocs.io
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xrt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ray tracing and wave propagation in x-ray regime
 
