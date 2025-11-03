@@ -6,14 +6,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
   sha256: 6af7ce13bb10942c1f8bad3028bd78986398d230da7babac1e23ad57656abfd1
   # TODO: remove the patch after https://github.com/kklmn/xrt/pull/42 is accepted/merged/released.
   patches:
     - 0000-entry-points.patch
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - {{ name }} = {{ name }}.gui.xrtQookStart:main
@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - distro
